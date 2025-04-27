@@ -5,7 +5,7 @@ function AboutPage() {
     <div style={{ padding: '20px' }}>
       <Link to="/">← Back to Pokedex</Link>
       <h1>About This App</h1>
-      <p>This is a simple Pokédex built with React, Vite and PokeAPI.</p>
+      <p>This is a simple app showing information for pokemons, built with react. All information are from pokeapi</p>
     </div>
   );
 }
