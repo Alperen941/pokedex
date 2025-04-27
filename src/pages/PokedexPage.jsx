@@ -25,17 +25,17 @@ function PokedexPage() {
   }, [page]);
 
   return (
-    <div style={{ padding: '20px', width: '1200px' }}>
+    <div style={{ padding: '20px', width: '100%' }}>
       <h1>Pokédex</h1>
       <Link to="/about">About</Link>
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-          gap: '20px',
-          justifyItems: 'center'
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, 200px)',
+          justifyContent: 'center',
+          gap: '20px'
         }}>
           {pokemonList.map((pokemon, index) => (
             <PokemonCard key={index} name={pokemon.name} />
